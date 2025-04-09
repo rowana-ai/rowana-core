@@ -1,6 +1,8 @@
 # @rowana-ai/rowana-core
 
-Core package for Rowana GEO - Automates Schema.org JSON-LD generation during build time.
+Stay tuned :)
+
+Core package for Rowana GEO - Automates JSON-LD generation during build time.
 
 ## Installation
 
@@ -40,5 +42,3 @@ console.log(jsonLdString);
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-stay tuned :)
