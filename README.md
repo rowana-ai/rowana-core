@@ -1,3 +1,5 @@
+![Rowana Logo](RowanaLogoWhiteBG.png)
+
 # @rowana-ai/rowana-core
 
 Stay tuned :)
