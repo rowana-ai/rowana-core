@@ -1,12 +1,40 @@
 {
-  "name": "rowana",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@jayminwest/rowana-core",
+  "version": "0.1.0",
+  "description": "Core package for Rowana GEO - Automates Schema.org JSON-LD generation during build time.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayminwest/rowana-core.git"
+  },
+  "keywords": [
+    "geo",
+    "llmo",
+    "seo",
+    "structured-data",
+    "json-ld",
+    "schema.org",
+    "nextjs",
+    "astro"
+  ],
+  "author": "Jaymin West <jaymin.west@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayminwest/rowana-core/issues"
+  },
+  "homepage": "https://github.com/jayminwest/rowana-core#readme"
 }
