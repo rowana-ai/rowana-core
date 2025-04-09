@@ -1,5 +1,5 @@
 {
-  "name": "@jayminwest/rowana-core",
+  "name": "@rowana/rowana-core",
   "version": "0.1.0",
   "description": "Core package for Rowana GEO - Automates Schema.org JSON-LD generation during build time.",
   "type": "module",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jayminwest/rowana-core.git"
+    "url": "git+https://github.com/rowana-ai/rowana-core.git"
   },
   "keywords": [
     "geo",
@@ -31,10 +31,10 @@
     "nextjs",
     "astro"
   ],
-  "author": "Jaymin West <jaymin.west@gmail.com>",
+  "author": "Rowana <info@rowana.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jayminwest/rowana-core/issues"
+    "url": "https://github.com/rowana-ai/rowana-core/issues"
   },
-  "homepage": "https://github.com/jayminwest/rowana-core#readme"
+  "homepage": "https://github.com/rowana-ai/rowana-core#readme"
 }
