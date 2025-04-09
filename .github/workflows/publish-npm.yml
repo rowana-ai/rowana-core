@@ -1,0 +1,45 @@
+
+name: Publish Package to npmjs
+
+on:
+  push:
+    branches:
+      - production # Trigger the workflow on pushes to the production branch
+
+jobs:
+  build-test-publish: # Renamed job for clarity
+    name: Build, Test, and Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x' # Or your preferred Node.js LTS version
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        # Use 'ci' for clean installs, respecting package-lock.json
+        run: npm ci
+
+      - name: Run linter
+        # Run the lint script defined in package.json
+        run: npm run lint --if-present
+
+      - name: Build package
+        # Run the build script (tsc) defined in package.json
+        run: npm run build --if-present
+
+      - name: Run tests
+        # Run the test script (jest) defined in package.json
+        # Make sure jest, ts-jest, @types/jest are in devDependencies!
+        run: npm test --if-present
+
+      - name: Publish package to npmjs
+        # Use --access public for scoped packages like @rowana/rowana-core
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
