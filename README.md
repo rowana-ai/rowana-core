@@ -1,4 +1,4 @@
-![Rowana Logo](RowanaLogoWhiteBG.png)
+<img src="RowanaLogoWhiteBG.png" alt="Rowana Logo" width="200"/>
 
 # @rowana-ai/rowana-core
 
