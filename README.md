@@ -1,4 +1,6 @@
-<img src="RowanaLogoWhiteBG.png" alt="Rowana Logo" width="200"/>
+<p align="center">
+  <img src="RowanaLogoWhiteBG.png" alt="Rowana Logo" width="200"/>
+</p>
 
 # @rowana-ai/rowana-core
 
