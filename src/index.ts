@@ -3,5 +3,3 @@ export function generateJsonLd(data: any): string {
   // Placeholder implementation
   return JSON.stringify({ "@context": "https://schema.org", "@type": "WebPage", "name": "Placeholder" });
 }
-
-console.log('Rowana Core Package Loaded (Dev)');
