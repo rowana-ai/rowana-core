@@ -1,6 +1,6 @@
 {
   "name": "@rowana/rowana-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core package for Rowana GEO - Automates Schema.org JSON-LD generation during build time.",
   "type": "module",
   "main": "dist/index.js",
