@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/rowana-ai/rowana-core/issues"
   },
-  "homepage": "https://github.com/rowana-ai/rowana-core#readme"
+  "homepage": "https://github.com/rowana-ai/rowana-core#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
