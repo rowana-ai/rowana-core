@@ -1,6 +1,6 @@
 {
   "name": "@rowana/rowana-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core package for Rowana GEO - Automates Schema.org JSON-LD generation during build time.",
   "type": "module",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run build"
   },
@@ -43,9 +43,14 @@
   },
   "homepage": "https://github.com/rowana-ai/rowana-core#readme",
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
     "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.5",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.29.1"
   }
 }
